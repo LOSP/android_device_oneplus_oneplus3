@@ -109,9 +109,6 @@ void vendor_load_properties() {
 
     property_set("ro.product.model", "OnePlus 3T");
 
-    property_set("ro.adb.secure", "0");
-    property_set("persist.service.adb.enable", "1");
-
     init_alarm_boot_properties();
 }
 
