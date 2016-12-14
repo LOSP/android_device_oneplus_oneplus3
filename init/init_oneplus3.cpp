@@ -94,7 +94,7 @@ void vendor_load_properties() {
     int rc;
 
     rc = property_get("ro.cm.device", device, NULL);
-    if (!rc || strncmp(device, "oneplus3", PROP_VALUE_MAX))
+    if (!rc || strncmp(device, "oneplus3", PROP_VALUE_MAX) || strncmp(device, "oneplus3t", PROP_VALUE_MAX))
         return;
 
     property_get("ro.boot.rf_version", rf_version, NULL);
