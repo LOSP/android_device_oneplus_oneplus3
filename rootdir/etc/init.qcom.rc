@@ -1257,3 +1257,9 @@ service ifaadaemon /system/bin/ifaadaemon
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
+
+on property:persist.display.srgb=1
+    write /sys/class/graphics/fb0/srgb 1
+
+on property:persist.display.srgb=0
+    write /sys/class/graphics/fb0/srgb 0
